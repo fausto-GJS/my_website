@@ -45,12 +45,12 @@ export default function AboutUs() {
                         </a>
                     </div>
                 <div className="contactNetwork">
-                 <h5>Deixe um comentário ou sugestôes</h5>
-                 <p className="alert">seu email não será divulgado</p>
+                 <h5>Deixe um comentário ou sugestões</h5>
+                 <p className="alert">Seu email não será divulgado.</p>
                  
-                        <p>nome <input type="text" placeholder='Digite seu nome aqui'/></p> 
-                        <p>email <input type="email" placeholder='Digite seu email aqui'/></p>
-                        <p>comentário</p><textarea placeholder='Digite seu comentário aqui'></textarea>
+                        <p>Nome <input type="text" placeholder='Digite seu nome aqui'/></p> 
+                        <p>Email <input type="email" placeholder='Digite seu email aqui'/></p>
+                        <p>Comentário</p><textarea placeholder='Digite seu comentário aqui'></textarea>
                         <button>Enviar</button>
                 </div>
                 
