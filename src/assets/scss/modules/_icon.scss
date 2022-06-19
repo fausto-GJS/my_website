@@ -1,0 +1,72 @@
+@mixin size1 {
+    width: 10px;
+    height: 10px;
+}
+@mixin size2 {
+    width: 25px;
+    height: 25px;
+}
+@mixin size3 {
+    width: 30px;
+    height: 30px;
+}
+
+@mixin size4 {
+    width: 100px;
+    height: 100px;
+}
+@mixin size1 {
+    width: 10px;
+    height: 10px;
+}
+@mixin size2 {
+    width: 2px;
+    height: 20px;
+}
+@mixin size3 {
+    width: 30px;
+    height: 30px;
+}
+
+@mixin size4 {
+    width: 40px;
+    height: 40px;
+}
+@mixin size5 {
+    width: 50px;
+    height: 50px;
+}
+@mixin size6 {
+    width: 60px;
+    height: 60px;
+}
+@mixin size7 {
+    width: 70px;
+    height: 70px;
+}
+
+@mixin size8 {
+    width: 80px;
+    height: 80px;
+}
+@mixin node {
+    color:#0ef202;
+}
+@mixin react{
+    color:#01f3db;
+}
+@mixin sass {
+    color:#ee00f4;
+}
+@mixin mongoDB {
+    color:#0ef202;
+}
+@mixin gold {
+    color:#ffcb1a;
+}
+@mixin linkedin {
+    color:#1a31ff;
+}
+@mixin git{
+    color:#fff9f2;
+}
