@@ -3,6 +3,7 @@ const animations={
         opacity:1,
         y:50,
         transition:{
+            type:'spring',
             duration:0.5,
             when:'beforeChildren',
             staggerChildred:0.25

@@ -2,6 +2,7 @@ const animations={
     show:{
         opacity:1,
         transition:{
+            type:'spring',
             duration:2,
             when:'beforeChildren',
             staggerChildred:2

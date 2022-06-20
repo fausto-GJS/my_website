@@ -3,14 +3,15 @@ const animations={
         opacity:1,
         x:0,
         transition:{
+            type:'spring',
             duration:1.5,
             when:'beforeChildren',
             staggerChildred:1.25
-        }
+        },
     },
     init:{
         opacity:0,
-       x:500,
+       x:450,
     },
     exit:{
         opacity:0,
