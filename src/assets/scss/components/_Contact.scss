@@ -1,8 +1,12 @@
 @use '../root/module.scss';
 @mixin Contact {
     #Contact{
-        @include module.flex-row;
-        width: 100px;
-        background-color: aqua;
+        @include module.flex-column;
+        @include module.position-center;
+        @include module.background-tech2;
+        background-color:#666;
+        color:#bbb;
+        width: 100%;
+        height: 97vh;
     }
 }

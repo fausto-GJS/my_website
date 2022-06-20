@@ -2,8 +2,14 @@
 @mixin Error {
     #Error{
 
-        @include module.flex-row;
-        width: 100px;
-        background-color: aqua;
+        @include module.flex-column;
+        @include module.position-center;
+        color:#111;
+        width: 100%;
+        height: 97vh;
+        img{
+            width: 550px;
+            height: 350px;
+        }
     }
 }
