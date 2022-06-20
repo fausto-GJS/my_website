@@ -10,6 +10,18 @@
     background-image: url('../imgs/marmore.jpg');
     background-size: 100%;
 }
+@mixin tech {
+    background-image: url('../imgs/tec.gif');
+    background-size: 100%;
+}
+@mixin tech2 {
+    background-image: url('../imgs/tec2.gif');
+    background-size: 100%;
+}
+@mixin tech3 {
+    background-image: url('../imgs/tec3.gif');
+    background-size: 100%;
+}
 @mixin fundo1 {
     background-color:#525252;
 }
