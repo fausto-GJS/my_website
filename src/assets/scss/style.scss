@@ -1,9 +1,31 @@
 @use './root/components.scss';
 
 @include components.Browser;
-@include components.AboutUs;
-@include components.Contact;
-@include components.Portfolio;
-@include components.Error;
-@include components.Header;
-@include components.Footer;
+
+
+@media(min-width:950px){
+@include components.AboutUs_desktop;
+@include components.Contact_desktop;
+@include components.Portfolio_desktop;
+@include components.Error_desktop;
+@include components.Header_desktop;
+@include components.Footer_desktop;
+}
+
+@media(min-width:900px) and (max-width:949px){
+@include components.AboutUs_tablet;
+@include components.Contact_tablet;
+@include components.Portfolio_tablet;
+@include components.Error_tablet;
+@include components.Header_desktop;
+@include components.Footer_tablet;
+}
+
+@media(min-width:850px) and (max-width:899px){
+    @include components.AboutUs_tablet;
+    @include components.Contact_tablet;
+    @include components.Portfolio_tablet;
+    @include components.Error_tablet;
+    @include components.Header_tablet;
+    @include components.Footer_tablet;
+    }

@@ -1,7 +1,15 @@
-@forward '../components/AboutUs';
-@forward '../components/Contact';
-@forward '../components/Error';
-@forward '../components/Portfolio';
-@forward '../components/Header';
-@forward '../components/Footer';
+@forward '../components/tablet/AboutUsTablet';
+@forward '../components/tablet/ContactTablet';
+@forward '../components/tablet/ErrorTablet';
+@forward '../components/tablet/PortfolioTablet';
+@forward '../components/tablet/HeaderTablet';
+@forward '../components/tablet/FooterTablet';
+
+@forward '../components/desktop/AboutUs_desktop';
+@forward '../components/desktop/Contact_desktop';
+@forward '../components/desktop/Error_desktop';
+@forward '../components/desktop/Portfolio_desktop';
+@forward '../components/desktop/Header_desktop';
+@forward '../components/desktop/Footer_desktop';
+
 @forward '../components/Browser';

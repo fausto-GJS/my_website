@@ -1,6 +1,7 @@
 @use '../root/module.scss';
 
 @mixin Header {
+@media(min-width:950px){
     #Header {
         position: fixed;
         @include module.flex-row;
@@ -47,6 +48,7 @@
             }
         }
     }
+}
 }
 @keyframes rotateFrame {
     0%{

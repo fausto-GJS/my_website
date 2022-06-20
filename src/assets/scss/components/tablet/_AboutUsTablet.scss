@@ -1,0 +1,387 @@
+@use '../../root/module.scss';
+
+@mixin AboutUs_tablet {
+        #AboutUs {
+            padding-top: 80px;
+            @include module.flex-column;
+            @include module.background-tech;
+            font-size: 30px;
+
+            .titleInfo {
+                font-weight: bold;
+                font-size: 18px;
+                &::before {
+                    content: '';
+                    animation: info 10s infinite;
+                }
+                @include module.background-glitter;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-left: 100px;
+            }
+
+            img {
+                width: 250px;
+                height: 250px;
+                border-radius: 200px 100px;
+            }
+
+            .iconNode,
+            .iconReact,
+            .iconSass,
+            .iconMongo {
+                @include module.icon-size7;
+                margin: 10px;
+            }
+
+            .infoAbility {
+                padding-left: 25px;
+                padding-right: 5px;
+                width: 100%;
+                @include module.flex-row;
+                @include module.position-space;
+            }
+
+            .ability {
+                @include module.flex-column;
+                @include module.position-center;
+                margin-top: 25px;
+                color: #ffcb1a;
+
+                .title {
+                    text-decoration: underline;
+                }
+            }
+
+            .card {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include module.flex-column;
+                @include module.position-space;
+                width: 100%;
+                height: 250px;
+            }
+
+            .card-photo {
+                @include module.flex-row;
+                @include module.position-center;
+                @include module.background-glitter;
+                margin-left: 50px;
+                width: 50%;
+                height: 220px;
+                border-radius: 200px 100px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+
+            .card-description {
+                animation: molecule 15s infinite;
+                margin-left: 10px;
+                margin-right: 10px;
+                flex-wrap: wrap;
+                background-image: radial-gradient(#888, #666, #444, #222, #000);
+                width: 700px;
+                color: #cdd20b;
+
+                p {
+                    font-size: 17px;
+                    font-weight: bold;
+                    padding: 30px;
+                }
+            }
+
+            .infoIcons {
+                font-size: 18px;
+
+                &::before {
+                    content: '';
+                    animation: infoIcons 15s infinite;
+                }
+            }
+
+            .iconNode {
+                animation: Node 15s infinite;
+            }
+
+            .iconReact {
+                animation: React 15s infinite;
+            }
+
+            .iconSass {
+                animation: Sass 15s infinite;
+            }
+
+            .iconMongo {
+                animation: Mongo 15s infinite;
+            }
+
+            .network {
+                @include module.flex-column;
+                @include module.background-carbono;
+                @include module.position-center;
+                margin-top: 200px;
+                padding-top: 80px;
+                height: 600px;
+
+                h5,
+                h4 {
+                    @include module.background-tech3;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+
+                .social {
+                    @include module.flex-column;
+                    @include module.position-center;
+                    margin: 50px 0px;
+                    width: 25%;
+                    height: 150px;
+                }
+
+                .alert {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    animation: alertFrame 8s infinite;
+                    font-size: 17px;
+                }
+
+                p {
+                    @include module.background-tech3;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+
+                button {
+                    width: 50%;
+                    border: none;
+                    background-color: #11464a;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    margin: 10px;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 15px;
+
+                    &:hover {
+                        background-color: #117d86;
+                    }
+
+                    &:active {
+                        color: #11464a;
+                        background-color: #f8241f;
+                    }
+                }
+            }
+
+            .iconNetwork {
+                margin-top: 15px;
+                @include module.flex-row;
+                @include module.position-space;
+                width: 70%;
+            }
+
+            .iconLinkedin {
+                @include module.icon-size4;
+                @include module.icon-linkedin;
+            }
+
+            .iconGit {
+                @include module.icon-size4;
+                @include module.icon-git;
+            }
+
+            .contactNetwork {
+                margin-top: 30px;
+                margin-bottom: 50px;
+                @include module.flex-column;
+                @include module.position-center;
+                width: 500px;
+
+                input {
+                    margin: 10px;
+                    width: 200px;
+                    @include module.background-fundo1;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    padding: 3px;
+
+                    &::placeholder {
+                        color: #d0ffce;
+                    }
+                }
+
+                textarea {
+                    @include module.background-fundo1;
+                    border-radius: 5px;
+                    resize: none;
+                    width: 320px;
+                    height: 150px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px;
+
+                    &::placeholder {
+                        color: #d0ffce;
+                    }
+                }
+            }
+
+
+
+            @keyframes alertFrame {
+                0% {
+                    color: #b03900;
+                }
+
+                50% {
+                    color: #ff5604
+                }
+
+                100% {
+                    color: #b03900;
+                }
+            }
+
+
+            ///////////////////////////////////////////   
+            @keyframes molecule {
+                0% {
+                    border-radius: 50px;
+                }
+
+                25% {
+                    border-radius: 100px 50px;
+                }
+
+                50% {
+                    border-radius: 100px 100px;
+                }
+
+                75% {
+                    border-radius: 50px 100px;
+
+                }
+
+                100% {
+                    border-radius: 50px;
+                }
+            }
+
+            @keyframes Node {
+                0% {
+                    @include module.icon-node;
+                }
+
+                25% {
+                    @include module.icon-gold;
+                }
+
+                75% {
+                    @include module.icon-gold;
+                }
+
+                100% {
+                    @include module.icon-gold;
+
+                }
+            }
+
+            @keyframes React {
+                0% {
+                    @include module.icon-gold;
+                }
+
+                25% {
+                    @include module.icon-react;
+                }
+
+                75% {
+                    @include module.icon-gold;
+                }
+
+                100% {
+                    @include module.icon-gold;
+
+                }
+            }
+
+            @keyframes Sass {
+                0% {
+                    @include module.icon-gold;
+                }
+
+                25% {
+                    @include module.icon-gold;
+                }
+
+                75% {
+                    @include module.icon-sass;
+                }
+
+                100% {
+                    @include module.icon-gold;
+
+                }
+            }
+
+            @keyframes Mongo {
+                0% {
+                    @include module.icon-gold;
+                }
+
+                25% {
+                    @include module.icon-gold;
+                }
+
+                75% {
+                    @include module.icon-gold;
+                }
+
+                100% {
+                    @include module.icon-mongoDB;
+
+                }
+            }
+
+            @keyframes infoIcons {
+                0% {
+                    content: 'Backend - Node.js';
+
+                    color: #0ef202;
+                }
+
+                25% {
+                    content: 'Frontend - React.js';
+
+                    color: #01f3db;
+                }
+
+                75% {
+                    content: 'Desing - Sass';
+
+                    color: #ee00f4;
+                }
+
+                100% {
+                    content: 'Banco de Dados - MongoDB';
+                    color: #0ef202;
+                }
+
+            }
+
+            @keyframes info {
+                0% {
+                    content: 'Desenvolvedor Fullstack Junior';
+                }
+
+                100% {
+                    content: 'Developer Fullstack Junior';
+                }
+            }
+        }
+    }

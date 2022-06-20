@@ -2,7 +2,6 @@ import { FaNodeJs, FaReact, FaSass, FaGithub } from 'react-icons/fa'
 import { SiMongodb, SiLinkedin } from 'react-icons/si'
 import profile from '../../assets/imgs/profile.jpg'
 import {motion} from 'framer-motion'
-import animations1 from '../effects/animations1'
 import animations2 from '../effects/animations2'
 import animationsCard1 from '../effects/animationsCard1'
 import animationsCard2 from '../effects/animationsCard2'
@@ -10,12 +9,7 @@ import animationsAbility from '../effects/animationsAbility'
 
 export default function AboutUs() {
     return (
-        <motion.div id="AboutUs"
-        initial='init'
-        animate='show'
-        exit='exit'
-        variants={animations1}
-        >
+        <div id="AboutUs">
             <motion.div className="infoAbility" 
             initial='init'
             animate='show'
@@ -36,6 +30,7 @@ export default function AboutUs() {
                 </div>
 
             </motion.div>
+            
             <div className="card">
                 <motion.div className="card-photo"
                  initial='init'
@@ -59,13 +54,13 @@ export default function AboutUs() {
                 </motion.div>
             </div>
           
-            <motion.div className="network"
+            <div className="network">
+            <motion.div className="social"
             initial='init'
             animate='show'
             exit='exit'
             variants={animations2}
             >
-                <div className="social">
                     <h4>Redes Sociais</h4>
                     <p className="alert">Siga-me!</p>
                     <div className="iconNetwork">
@@ -78,17 +73,14 @@ export default function AboutUs() {
                     </div>
                 <div className="contactNetwork">
                  <h5>Deixe um comentário ou sugestões</h5>
-                 <p className="alert">Seu email não será divulgado.</p>
-                 
+                 <p className="alert">Seu email não será divulgado.</p>          
                         <p>Nome <input type="text" placeholder='Digite seu nome aqui'/></p> 
                         <p>Email <input type="email" placeholder='Digite seu email aqui'/></p>
                         <p>Comentário</p><textarea placeholder='Digite seu comentário aqui'></textarea>
                         <button>Enviar</button>
                 </div>
-                
-                </div>
             </motion.div>
-
-        </motion.div>
+                </div>
+        </div>
     )
 }

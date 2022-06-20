@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import Footer from '../common/Footer'
 import err from '../../assets/imgs/err.png'
 
 export default function Error(){

@@ -15,7 +15,7 @@ export default function Router() {
         <Route exact path='/contact' element={<Contact/>}/>
         <Route exact path='*' element={<Error/>}/>
       </Routes>
-      <Footer />
+      <Footer/>
     </BrowserRouter>
   )
 

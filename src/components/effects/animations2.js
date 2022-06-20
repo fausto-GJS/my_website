@@ -1,17 +1,18 @@
 const animations={
     show:{
         opacity:1,
-        y:0,
+       // y:100,
         transition:{
-            type:'spring',
+        //    type:'spring',
             duration:1,
-            when:'beforeChildren',
-            staggerChildred:1
+          //  when:'beforeChildren',
+          //  staggerChildred:1
         }
+        
     },
     init:{
         opacity:0,
-       y:500,
+     //  y:50,
     },
     exit:{
         opacity:0,

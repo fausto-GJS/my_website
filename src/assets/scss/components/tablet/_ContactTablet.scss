@@ -1,0 +1,19 @@
+@use '../../root/module.scss';
+
+@mixin Contact_tablet {
+
+        #Contact {
+            @include module.flex-column;
+            @include module.position-center;
+            @include module.background-tech2;
+            background-color: #666;
+            color: #bbb;
+            width: 100%;
+            height: 97vh;
+
+            .card {
+                @include module.flex-column;
+                @include module.position-center;
+            }
+        }
+    }

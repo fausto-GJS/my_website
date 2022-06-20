@@ -1,6 +1,6 @@
-@use '../root/module.scss';
+@use '../../root/module.scss';
 
-@mixin AboutUs {
+@mixin AboutUs_desktop {
     #AboutUs {
         padding-top: 50px;
         @include module.flex-column;
@@ -117,9 +117,8 @@
             margin-top: 40px;
             padding-top: 80px;
             height: 600px;
-
             h5,h4{
-                @include module.background-tech3;
+            @include module.background-tech3;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -130,7 +129,7 @@
                 @include module.position-center;
                 margin: 50px 0px;
                 width: 25%;
-                height: 150px;
+                height: 180px;
             }
             .alert{
                 margin-top: 15px;
@@ -209,7 +208,7 @@
                     }
                 }
             }
-            
+        }
             
 
 @keyframes alertFrame {
@@ -361,4 +360,3 @@ color:#ff5604
             }
         }
     }
-}

@@ -1,0 +1,13 @@
+@use '../../root/module.scss';
+
+@mixin Footer_tablet {
+
+        #Footer {
+            @include module.flex-row;
+            @include module.position-center;
+            @include module.background-marmore;
+            width: 100%;
+            height: 20px;
+            bottom: 0px;
+        }
+    }
