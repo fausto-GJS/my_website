@@ -135,7 +135,8 @@ a {
 #AboutUs .network {
   display: flex;
   flex-direction: column;
-  background-color: #333333;
+  background-image: url("../imgs/carbono.jpg");
+  background-size: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
@@ -143,7 +144,7 @@ a {
   height: 600px;
 }
 #AboutUs .network h5, #AboutUs .network h4 {
-  background-image: url("../imgs/marmore.jpg");
+  background-image: url("../imgs/tec3.gif");
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -165,27 +166,27 @@ a {
   font-size: 17px;
 }
 #AboutUs .network p {
-  background-image: url("../imgs/marmore.jpg");
+  background-image: url("../imgs/tec3.gif");
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
 }
 #AboutUs .network button {
   width: 50%;
   border: none;
-  background-color: #117d86;
+  background-color: #11464a;
   border-radius: 10px;
   font-weight: bold;
   margin: 10px;
   padding: 10px;
   color: #fff;
+  font-size: 15px;
 }
 #AboutUs .network button:hover {
-  background-color: #11464a;
-  color: #f8241f;
+  background-color: #117d86;
 }
 #AboutUs .network button:active {
   color: #11464a;
@@ -221,30 +222,36 @@ a {
 #AboutUs .contactNetwork input {
   margin: 10px;
   width: 200px;
-  background-image: url("../imgs/marmore.jpg");
-  background-size: 100%;
+  background-color: #525252;
   border-radius: 5px;
   font-weight: bold;
+  padding: 3px;
+}
+#AboutUs .contactNetwork input::placeholder {
+  color: #d0ffce;
 }
 #AboutUs .contactNetwork textarea {
-  background-image: url("../imgs/marmore.jpg");
-  background-size: 100%;
+  background-color: #525252;
   border-radius: 5px;
   resize: none;
   width: 320px;
   height: 150px;
   font-size: 18px;
   font-weight: bold;
+  padding: 10px;
+}
+#AboutUs .contactNetwork textarea::placeholder {
+  color: #d0ffce;
 }
 @keyframes alertFrame {
   0% {
-    color: #21c5d1;
+    color: #b03900;
   }
   50% {
     color: #ff5604;
   }
   100% {
-    color: #21c5d1;
+    color: #b03900;
   }
 }
 @keyframes molecule {

@@ -14,12 +14,20 @@
     background-image: url('../imgs/tec.gif');
     background-size: 100%;
 }
+@mixin tech1 {
+    background-image: url('../imgs/tec1.gif');
+    background-size: 100%;
+}
 @mixin tech2 {
     background-image: url('../imgs/tec2.gif');
     background-size: 100%;
 }
 @mixin tech3 {
     background-image: url('../imgs/tec3.gif');
+    background-size: 100%;
+}
+@mixin carbono {
+    background-image: url('../imgs/carbono.jpg');
     background-size: 100%;
 }
 @mixin fundo1 {

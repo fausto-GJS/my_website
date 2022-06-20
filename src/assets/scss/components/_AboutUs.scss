@@ -112,14 +112,14 @@
         }
         .network{
             @include module.flex-column;
-            @include module.background-fundo3;
+            @include module.background-carbono;
             @include module.position-center;
             margin-top: 40px;
             padding-top: 80px;
             height: 600px;
 
             h5,h4{
-                @include module.background-marmore;
+                @include module.background-tech3;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -139,25 +139,25 @@
                 font-size: 17px;
             }
             p{
-            @include module.background-marmore;
+            @include module.background-tech3;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
                 font-weight: bold;
-                font-size: 17px;  
+                font-size: 20px;  
             }
             button{
                 width: 50%;
                 border:none;
-                background-color: #117d86;
+                background-color: #11464a;
                 border-radius:10px;
                 font-weight: bold;
                 margin: 10px;
                 padding: 10px;
                 color:#fff;
+                font-size: 15px;
                 &:hover{ 
-                background-color: #11464a;
-                color:#f8241f;
+                background-color: #117d86;
                 }
                 &:active{
                 color:#11464a;
@@ -187,43 +187,42 @@
                 width: 500px;
                 input{
                     margin: 10px;
-                    width: 200px; @include module.background-marmore; 
+                    width: 200px; @include module.background-fundo1; 
                     border-radius: 5px;
                     font-weight: bold;
+                    padding: 3px;
+                    &::placeholder {
+                        color: #d0ffce;
+                    }
                 }
                 textarea{
-                    @include module.background-marmore;
+                    @include module.background-fundo1;
                     border-radius: 5px;
                     resize: none;
                     width:320px;
                     height: 150px;
                     font-size: 18px;
                     font-weight: bold;
+                    padding: 10px;
+                    &::placeholder {
+                        color: #d0ffce;
+                    }
                 }
             }
             
             
-            
-            
-
 
 @keyframes alertFrame {
  0%{
-    color:#21c5d1;
+    color:#b03900;
  } 
  50%{
 color:#ff5604
  }  
  100%{
-    color:#21c5d1;
+    color:#b03900;
  }
 }
-
-
-
-
-
-
 
 
      ///////////////////////////////////////////   
