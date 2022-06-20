@@ -21,7 +21,7 @@
 @include components.Footer_tablet;
 }
 
-@media(min-width:850px) and (max-width:899px){
+@media(min-width:0px) and (max-width:899px){
     @include components.AboutUs_tablet;
     @include components.Contact_tablet;
     @include components.Portfolio_tablet;

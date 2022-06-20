@@ -30,21 +30,21 @@
         }
     
         .menu {
-            
             @include module.flex-column;
+            height: 30px;
             background-color:aqua;
             border-radius:10px;
-            width: 200px;
             justify-content: flex-end;
             align-items: center;
             a{
                 visibility: hidden;
             }
             &:active{
-                animation: btnActive 15s linear;
+                animation: btnActive 5s linear;
                 a{
                     visibility: visible;
-                }
+              }
+               
             }
             
            
@@ -70,8 +70,12 @@
 @keyframes btnActive {
     to{
         height: 300px;
+        width: 150px;
+        visibility: visible;
     }
     from{
         height: 0px;
+        width: 30px;
+        visibility: hidden;
     }
 }
