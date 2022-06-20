@@ -117,8 +117,12 @@
             margin-top: 40px;
             padding-top: 80px;
             height: 600px;
-            h5{
-                color:#ffcb1a;
+
+            h5,h4{
+                @include module.background-marmore;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             }
            
             .social{
@@ -131,11 +135,14 @@
             .alert{
                 margin-top: 15px;
                 margin-bottom: 15px;
-                color:#ff8000;
+               color:#fffb55;
                 font-size: 17px;
             }
             p{
-                color:#fff;
+                @include module.background-marmore;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
                 font-weight: bold;
                 font-size: 17px;  
             }
@@ -184,15 +191,18 @@
                 width: 500px;
                 input{
                     margin: 10px;
-                    width: 200px;
-                    background-color:#bbb;
-                    color:#01f3db;
+                    width: 200px; @include module.background-marmore; 
+                    border-radius: 5px;
+                    font-weight: bold;
                 }
                 textarea{
-                    background-color:#bbb;
+                    @include module.background-marmore;
+                    border-radius: 5px;
                     resize: none;
                     width:320px;
                     height: 150px;
+                    font-size: 18px;
+                    font-weight: bold;
                 }
             }
             

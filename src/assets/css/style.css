@@ -141,8 +141,12 @@ a {
   padding-top: 80px;
   height: 600px;
 }
-#AboutUs .network h5 {
-  color: #ffcb1a;
+#AboutUs .network h5, #AboutUs .network h4 {
+  background-image: url("../imgs/marmore.jpg");
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 #AboutUs .network .social {
   display: flex;
@@ -156,11 +160,15 @@ a {
 #AboutUs .network .alert {
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #ff8000;
+  color: #fffb55;
   font-size: 17px;
 }
 #AboutUs .network p {
-  color: #fff;
+  background-image: url("../imgs/marmore.jpg");
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-weight: bold;
   font-size: 17px;
 }
@@ -212,14 +220,20 @@ a {
 #AboutUs .contactNetwork input {
   margin: 10px;
   width: 200px;
-  background-color: #bbb;
-  color: #01f3db;
+  background-image: url("../imgs/marmore.jpg");
+  background-size: 100%;
+  border-radius: 5px;
+  font-weight: bold;
 }
 #AboutUs .contactNetwork textarea {
-  background-color: #bbb;
+  background-image: url("../imgs/marmore.jpg");
+  background-size: 100%;
+  border-radius: 5px;
   resize: none;
   width: 320px;
   height: 150px;
+  font-size: 18px;
+  font-weight: bold;
 }
 @keyframes molecule {
   0% {
