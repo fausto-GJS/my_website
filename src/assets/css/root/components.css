@@ -12,18 +12,6 @@
     transform: rotate(0deg);
   }
 }
-@keyframes btnActive {
-  to {
-    height: 300px;
-    width: 150px;
-    visibility: visible;
-  }
-  from {
-    height: 0px;
-    width: 30px;
-    visibility: hidden;
-  }
-}
 @keyframes rotateFrame {
   0% {
     transform: rotate(0deg);

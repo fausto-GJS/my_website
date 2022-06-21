@@ -12,18 +12,6 @@
     transform: rotate(0deg);
   }
 }
-@keyframes btnActive {
-  to {
-    height: 300px;
-    width: 150px;
-    visibility: visible;
-  }
-  from {
-    height: 0px;
-    width: 30px;
-    visibility: hidden;
-  }
-}
 @keyframes rotateFrame {
   0% {
     transform: rotate(0deg);
@@ -486,6 +474,9 @@ a {
     font-size: 40px;
     margin-left: 15px;
   }
+  #Header .btnMobile {
+    visibility: hidden;
+  }
   #Header .menu {
     display: flex;
     flex-direction: row;
@@ -861,10 +852,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec2.gif");
+    background-image: url("../imgs/tec.gif");
     background-size: 100%;
-    background-color: #666;
-    color: #bbb;
     width: 100%;
     height: 97vh;
   }
@@ -873,6 +862,17 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #Contact h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #Contact h1, #Contact h2 {
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   #Portfolio {
@@ -960,6 +960,9 @@ a {
     color: transparent;
     font-size: 40px;
     margin-left: 15px;
+  }
+  #Header .btnMobile {
+    visibility: hidden;
   }
   #Header .menu {
     display: flex;
@@ -1336,10 +1339,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec2.gif");
+    background-image: url("../imgs/tec.gif");
     background-size: 100%;
-    background-color: #666;
-    color: #bbb;
     width: 100%;
     height: 97vh;
   }
@@ -1348,6 +1349,17 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #Contact h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #Contact h1, #Contact h2 {
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   #Portfolio {
@@ -1403,8 +1415,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../imgs/marmore.jpg");
-    background-size: 100%;
+    background-color: #525252;
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -1433,23 +1444,49 @@ a {
     font-size: 40px;
     margin-left: 15px;
   }
-  #Header .menu {
+  #Header .btnMobile {
+    z-index: 3;
+  }
+  #Header .controls {
     display: flex;
     flex-direction: column;
-    height: 30px;
-    background-color: aqua;
-    border-radius: 10px;
     justify-content: flex-end;
     align-items: center;
+    width: 50px;
+    height: 10px;
+    border: 1px solid #000;
   }
-  #Header .menu a {
-    visibility: hidden;
-  }
-  #Header .menu:active {
-    animation: btnActive 5s linear;
-  }
-  #Header .menu:active a {
+  #Header .menu.active {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 15px;
+    transition: 0.6s;
+    top: 50px;
+    width: 200px;
+    height: 250px;
+    background-color: #e7e7e7;
+    right: 0;
     visibility: visible;
+  }
+  #Header .menu.active a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: #eee;
+  }
+  #Header .menu.active a:hover {
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  #Header .menu {
+    visibility: hidden;
   }
 
   #Footer {
