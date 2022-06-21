@@ -12,20 +12,11 @@
 @include components.Footer_desktop;
 }
 
-@media(min-width:900px) and (max-width:949px){
+@media(min-width:10px) and (max-width:949px){
 @include components.AboutUs_tablet;
 @include components.Contact_tablet;
 @include components.Portfolio_tablet;
 @include components.Error_tablet;
-@include components.Header_desktop;
+@include components.Header_tablet;
 @include components.Footer_tablet;
 }
-
-@media(min-width:0px) and (max-width:899px){
-    @include components.AboutUs_tablet;
-    @include components.Contact_tablet;
-    @include components.Portfolio_tablet;
-    @include components.Error_tablet;
-    @include components.Header_tablet;
-    @include components.Footer_tablet;
-    }
