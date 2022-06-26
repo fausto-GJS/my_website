@@ -33,15 +33,61 @@
         }
 
         .btnMobile {
-            z-index: 3;
-        }
-        .controls{
             @include module.flex-column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items:center;
+            z-index: 3;
+            border: none;
+            width: 10px;
+            padding: 1px;
+        }
+
+        .btnMobile1.active,
+        .btnMobile3.active{
+            position: absolute;
+            width: 30px;
+            transition: 1.4s;
+        }
+        .btnMobile2.active{
+              width: 0px;
+        }
+        .btnMobile1.active{
+            transform: rotate(400deg);
+        }
+        .btnMobile3.active{
+            transform: rotate(-400deg);
+        }
+
+        .btnMobile1,
+        .btnMobile2,
+        .btnMobile3 {
+            display: none;
+            transition: 1.4s;
+            display: block;
+            margin: 2px;
+            width: 10px;
+            height: 8px;
+            background-color: black;
+            border-radius: 15px;
+           
+        }
+
+
+        .controls {
+            @include module.flex-column;
+            justify-content:center;
+            align-items: center;
             width: 50px;
-            height: 10px;
+            height: 50px;
             border: 1px solid #000;
+            &:hover{
+            .btnMobile1,
+        .btnMobile2,
+        .btnMobile3 {
+                transition: 4s;
+                width: 30px;
+        }
+            }
         }
 
         .menu.active {
@@ -49,7 +95,7 @@
             z-index: 2;
             @include module.flex-column;
             @include module.position-center;
-            border-radius:0px 0px 0px 15px;
+            border-radius: 0px 0px 0px 15px;
             transition: .6s;
             top: 50px;
             width: 200px;
@@ -57,11 +103,13 @@
             background-color: #e7e7e7;
             right: 0;
             visibility: visible;
+
             a {
                 @include module.flex-row;
                 @include module.position-center;
                 font-size: 20px;
                 border-bottom: #eee;
+
                 &:hover {
                     font-weight: bold;
                     width: 100%;
@@ -69,12 +117,13 @@
                 }
             }
         }
-            .menu{
-                visibility: hidden;
-            }
-        }
 
+        .menu {
+            visibility: hidden;
+        }
     }
+
+}
 
 
 @keyframes rotateFrame {
