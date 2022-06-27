@@ -1,5 +1,5 @@
-@use '../root/module.scss';
-@mixin Footer{
+@use '../../root/module.scss';
+@mixin Footer_mobile{
     #Footer{
         @include module.flex-row;
         @include module.position-center;

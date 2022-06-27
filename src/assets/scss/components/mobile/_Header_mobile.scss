@@ -1,6 +1,6 @@
 @use '../../root/module.scss';
 
-@mixin Header_tablet {
+@mixin Header_mobile {
     #Header {
         position: fixed;
         @include module.flex-row;
@@ -23,15 +23,15 @@
             animation: rotateFrame 10s infinite;
         }
 
-        .titleHeader {
+        .titleHeader{
             @include module.background-glitter;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            font-size: 40px;
+            font-size: 35px;
             margin-left: 15px;
             &:before {
-                content: "Fausto Garcia Jacinto Silva";
+                content: "Fausto GJS";
             }
         }
 

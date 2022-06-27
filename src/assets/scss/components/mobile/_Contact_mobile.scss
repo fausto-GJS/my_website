@@ -1,5 +1,5 @@
-@use '../root/module.scss';
-@mixin Contact {
+@use '../../root/module.scss';
+@mixin Contact_mobile {
     #Contact{
         @include module.flex-column;
         @include module.position-center;

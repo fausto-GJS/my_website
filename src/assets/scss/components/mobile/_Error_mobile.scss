@@ -1,5 +1,5 @@
-@use '../root/module.scss';
-@mixin Error {
+@use '../../root/module.scss';
+@mixin Error_mobile {
     #Error{
 
         @include module.flex-column;

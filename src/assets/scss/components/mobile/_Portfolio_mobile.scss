@@ -1,5 +1,5 @@
-@use '../root/module.scss';
-@mixin Portfolio {
+@use '../../root/module.scss';
+@mixin Portfolio_mobile {
     #Portfolio{
         @include module.flex-row;
         @include module.position-center;

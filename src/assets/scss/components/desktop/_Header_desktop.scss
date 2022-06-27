@@ -25,13 +25,16 @@
                 animation: rotateFrame 10s infinite;
             }
 
-            h1 {
+            .titleHeader {
                 @include module.background-glitter;
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
                 font-size: 40px;
                 margin-left: 15px;
+                &:before {
+                    content: "Fausto Garcia Jacinto Silva";
+                }
             }
             .btnMobile{
                 visibility: hidden;
@@ -57,9 +60,7 @@
                 }
             }
             .controls{
-                @include module.flex-row;
-                justify-content: center;
-                align-items: center;
+                display: none;
             }
         }
     }

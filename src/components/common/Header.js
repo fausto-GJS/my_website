@@ -17,7 +17,7 @@ export default function Header() {
         <div id="Header">
             <div className="logo">
                 <BsCodeSlash className="iconLogo" />
-                <h1>Fausto Garcia Jacinto Silva</h1>
+                <h1 className='titleHeader'></h1>
             </div>
                 <div className="menu">
                     <Link to='/'>Sobre</Link>

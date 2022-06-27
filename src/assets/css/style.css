@@ -26,6 +26,20 @@
     transform: rotate(0deg);
   }
 }
+@keyframes rotateFrame {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  75% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -465,7 +479,7 @@ a {
     border-radius: 100%;
     animation: rotateFrame 10s infinite;
   }
-  #Header h1 {
+  #Header .titleHeader {
     background-image: url("../imgs/glitter.gif");
     background-size: 100%;
     background-clip: text;
@@ -473,6 +487,9 @@ a {
     color: transparent;
     font-size: 40px;
     margin-left: 15px;
+  }
+  #Header .titleHeader:before {
+    content: "Fausto Garcia Jacinto Silva";
   }
   #Header .btnMobile {
     visibility: hidden;
@@ -499,10 +516,7 @@ a {
     font-weight: bold;
   }
   #Header .controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
 
   #Footer {
@@ -517,7 +531,7 @@ a {
     bottom: 0px;
   }
 }
-@media (min-width: 10px) and (max-width: 949px) {
+@media (min-width: 795px) and (max-width: 949px) {
   #AboutUs {
     padding-top: 80px;
     display: flex;
@@ -954,7 +968,7 @@ a {
     border-radius: 100%;
     animation: rotateFrame 10s infinite;
   }
-  #Header h1 {
+  #Header .titleHeader {
     background-image: url("../imgs/glitter.gif");
     background-size: 100%;
     background-clip: text;
@@ -962,6 +976,9 @@ a {
     color: transparent;
     font-size: 40px;
     margin-left: 15px;
+  }
+  #Header .titleHeader:before {
+    content: "Fausto Garcia Jacinto Silva";
   }
   #Header .btnMobile {
     display: flex;
@@ -1009,11 +1026,534 @@ a {
     height: 50px;
     border: 1px solid #000;
   }
-  #Header .controls:hover .btnMobile1,
-#Header .controls:hover .btnMobile2,
-#Header .controls:hover .btnMobile3 {
-    transition: 4s;
+  #Header .menu.active {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 15px;
+    transition: 0.6s;
+    top: 50px;
+    width: 200px;
+    height: 250px;
+    background-color: #e7e7e7;
+    right: 0;
+    visibility: visible;
+  }
+  #Header .menu.active a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: #eee;
+  }
+  #Header .menu.active a:hover {
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  #Header .menu {
+    visibility: hidden;
+  }
+
+  #Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/marmore.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 20px;
+    bottom: 0px;
+  }
+}
+@media (min-width: 10px) and (max-width: 794px) {
+  #AboutUs {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/tec2.gif");
+    background-size: 100%;
+    font-size: 30px;
+  }
+  #AboutUs .titleInfo {
+    font-weight: bold;
+    background-image: url("../imgs/marmore.jpg");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 100px;
+  }
+  #AboutUs .titleInfo::before {
+    content: "";
+    animation: info 10s infinite;
+  }
+  #AboutUs img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px 100px;
+  }
+  #AboutUs .iconNode,
+#AboutUs .iconReact,
+#AboutUs .iconSass,
+#AboutUs .iconMongo {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+  #AboutUs .infoAbility {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 25PX;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #AboutUs .ability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    color: #ffcb1a;
+  }
+  #AboutUs .ability .title {
+    text-decoration: underline;
+  }
+  #AboutUs .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+  }
+  #AboutUs .card-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
+    margin-left: 50px;
+    width: 50%;
+    border-radius: 200px 100px;
+    margin-bottom: 15px;
+  }
+  #AboutUs .card-description {
+    animation: molecule 15s infinite;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    background-image: radial-gradient(#888, #666, #444, #222, #000);
+    width: 80%;
+    color: #cdd20b;
+    margin-bottom: 15px;
+  }
+  #AboutUs .card-description p {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 30px;
+  }
+  #AboutUs .infoIcons {
+    font-size: 18px;
+  }
+  #AboutUs .infoIcons::before {
+    content: "";
+    animation: infoIcons 15s infinite;
+  }
+  #AboutUs .iconNode {
+    animation: Node 15s infinite;
+  }
+  #AboutUs .iconReact {
+    animation: React 15s infinite;
+  }
+  #AboutUs .iconSass {
+    animation: Sass 15s infinite;
+  }
+  #AboutUs .iconMongo {
+    animation: Mongo 15s infinite;
+  }
+  #AboutUs .network {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/carbono.jpg");
+    background-size: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    padding-top: 80px;
+    height: 600px;
+  }
+  #AboutUs .network h5, #AboutUs .network h4 {
+    background-image: url("../imgs/tec3.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  #AboutUs .network .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    width: 25%;
+    height: 150px;
+  }
+  #AboutUs .network .alert {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    animation: alertFrame 8s infinite;
+    font-size: 17px;
+  }
+  #AboutUs .network p {
+    background-image: url("../imgs/tec3.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #AboutUs .network button {
+    width: 50%;
+    border: none;
+    background-color: #11464a;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+  }
+  #AboutUs .network button:hover {
+    background-color: #117d86;
+  }
+  #AboutUs .network button:active {
+    color: #11464a;
+    background-color: #f8241f;
+  }
+  #AboutUs .iconNetwork {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+  #AboutUs .iconLinkedin {
+    width: 40px;
+    height: 40px;
+    color: #1a31ff;
+  }
+  #AboutUs .iconGit {
+    width: 40px;
+    height: 40px;
+    color: #000000;
+  }
+  #AboutUs .contactNetwork {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+  #AboutUs .contactNetwork input {
+    margin: 10px;
+    width: 200px;
+    background-color: #525252;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+  }
+  #AboutUs .contactNetwork input::placeholder {
+    color: #d0ffce;
+  }
+  #AboutUs .contactNetwork textarea {
+    background-color: #525252;
+    border-radius: 5px;
+    resize: none;
+    width: 320px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  #AboutUs .contactNetwork textarea::placeholder {
+    color: #d0ffce;
+  }
+  @keyframes alertFrame {
+    0% {
+      color: #b03900;
+    }
+    50% {
+      color: #ff5604;
+    }
+    100% {
+      color: #b03900;
+    }
+  }
+  @keyframes molecule {
+    0% {
+      border-radius: 50px;
+    }
+    25% {
+      border-radius: 100px 50px;
+    }
+    50% {
+      border-radius: 100px 100px;
+    }
+    75% {
+      border-radius: 50px 100px;
+    }
+    100% {
+      border-radius: 50px;
+    }
+  }
+  @keyframes Node {
+    0% {
+      color: #0ef202;
+    }
+    25% {
+      color: #ffcb1a;
+    }
+    75% {
+      color: #ffcb1a;
+    }
+    100% {
+      color: #ffcb1a;
+    }
+  }
+  @keyframes React {
+    0% {
+      color: #ffcb1a;
+    }
+    25% {
+      color: #01f3db;
+    }
+    75% {
+      color: #ffcb1a;
+    }
+    100% {
+      color: #ffcb1a;
+    }
+  }
+  @keyframes Sass {
+    0% {
+      color: #ffcb1a;
+    }
+    25% {
+      color: #ffcb1a;
+    }
+    75% {
+      color: #ee00f4;
+    }
+    100% {
+      color: #ffcb1a;
+    }
+  }
+  @keyframes Mongo {
+    0% {
+      color: #ffcb1a;
+    }
+    25% {
+      color: #ffcb1a;
+    }
+    75% {
+      color: #ffcb1a;
+    }
+    100% {
+      color: #0ef202;
+    }
+  }
+  @keyframes infoIcons {
+    0% {
+      content: "Backend - Node.js";
+      color: #0ef202;
+    }
+    25% {
+      content: "Frontend - React.js";
+      color: #01f3db;
+    }
+    75% {
+      content: "Desing - Sass";
+      color: #ee00f4;
+    }
+    100% {
+      content: "Banco de Dados - MongoDB";
+      color: #0ef202;
+    }
+  }
+  @keyframes info {
+    0% {
+      content: "Desenvolvedor Fullstack Junior";
+    }
+    100% {
+      content: "Developer Fullstack Junior";
+    }
+  }
+
+  #Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/tec2.gif");
+    background-size: 100%;
+    background-color: #666;
+    color: #bbb;
+    width: 100%;
+    height: 97vh;
+  }
+  #Contact .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 297vh;
+  }
+
+  .wrapper {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  }
+
+  .item {
+    width: inherit;
+    height: inherit;
+    background: white;
+    transform-origin: 50% 100%;
+  }
+
+  #Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    width: 100%;
+    height: 97vh;
+  }
+  #Error img {
+    width: 550px;
+    height: 350px;
+  }
+
+  #Header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #525252;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+  }
+  #Header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #Header .iconLogo {
+    color: #f2f200;
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
     width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    animation: rotateFrame 10s infinite;
+  }
+  #Header .titleHeader {
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    margin-left: 15px;
+  }
+  #Header .titleHeader:before {
+    content: "Fausto GJS";
+  }
+  #Header .btnMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    border: none;
+    width: 10px;
+    padding: 1px;
+  }
+  #Header .btnMobile1.active,
+#Header .btnMobile3.active {
+    position: absolute;
+    width: 30px;
+    transition: 1.4s;
+  }
+  #Header .btnMobile2.active {
+    width: 0px;
+  }
+  #Header .btnMobile1.active {
+    transform: rotate(400deg);
+  }
+  #Header .btnMobile3.active {
+    transform: rotate(-400deg);
+  }
+  #Header .btnMobile1,
+#Header .btnMobile2,
+#Header .btnMobile3 {
+    display: none;
+    transition: 1.4s;
+    display: block;
+    margin: 2px;
+    width: 10px;
+    height: 8px;
+    background-color: black;
+    border-radius: 15px;
+  }
+  #Header .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
   }
   #Header .menu.active {
     position: absolute;
