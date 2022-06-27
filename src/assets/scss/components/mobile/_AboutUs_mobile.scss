@@ -120,7 +120,8 @@
             @include module.position-center;
             margin-top: 280px;
             padding-top: 80px;
-            height: 600px;
+           
+            height: 100%;
             h5,h4{
             @include module.background-tech3;
             background-clip: text;
@@ -168,6 +169,7 @@
                 }
             }
         }
+
         .iconNetwork{
             margin-top: 15px;
             @include module.flex-row;

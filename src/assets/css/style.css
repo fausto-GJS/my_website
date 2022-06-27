@@ -1024,7 +1024,6 @@ a {
     align-items: center;
     width: 50px;
     height: 50px;
-    border: 1px solid #000;
   }
   #Header .menu.active {
     position: absolute;
@@ -1192,7 +1191,7 @@ a {
     align-items: center;
     margin-top: 280px;
     padding-top: 80px;
-    height: 600px;
+    height: 100%;
   }
   #AboutUs .network h5, #AboutUs .network h4 {
     background-image: url("../imgs/tec3.gif");
@@ -1553,7 +1552,6 @@ a {
     align-items: center;
     width: 50px;
     height: 50px;
-    border: 1px solid #000;
   }
   #Header .menu.active {
     position: absolute;
