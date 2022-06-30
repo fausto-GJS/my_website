@@ -4,3 +4,4 @@ npm i framer-motion
 npm install concurrently 
 npm install -g serve
 npm i serve
+npm i react-intersection-observer

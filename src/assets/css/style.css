@@ -127,8 +127,16 @@ a {
     width: 50%;
     height: 220px;
     border-radius: 200px 100px;
+    box-shadow: 0 0 2px gold;
+  }
+  #AboutUs .card-photo:hover {
+    box-shadow: 0 0 5px gold;
+  }
+  #AboutUs .card-photo:active {
+    box-shadow: 0 0 8px gold;
   }
   #AboutUs .card-description {
+    box-shadow: 2px 2px rgba(255, 215, 0, 0.2);
     animation: molecule 15s infinite;
     margin-left: 10px;
     margin-right: 10px;
@@ -136,6 +144,12 @@ a {
     background-image: radial-gradient(#888, #666, #444, #222, #000);
     width: 700px;
     color: #cdd20b;
+  }
+  #AboutUs .card-description:hover {
+    box-shadow: 2px 2px rgba(255, 215, 0, 0.5);
+  }
+  #AboutUs .card-description:active {
+    box-shadow: 2px 2px gold;
   }
   #AboutUs .card-description p {
     font-size: 17px;
@@ -1077,8 +1091,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec2.gif");
+    background-image: url("../imgs/tec3.gif");
     background-size: 100%;
+    background-size: cover;
     font-size: 30px;
   }
   #AboutUs .titleInfo {
@@ -1194,7 +1209,7 @@ a {
     height: 100%;
   }
   #AboutUs .network h5, #AboutUs .network h4 {
-    background-image: url("../imgs/tec3.gif");
+    background-image: url("../imgs/glitter.gif");
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;

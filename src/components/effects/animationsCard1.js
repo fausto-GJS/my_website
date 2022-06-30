@@ -4,7 +4,7 @@ const animations={
         x:0,
         transition:{
             type:'spring',
-            duration:1.5,
+            duration:5,
             when:'beforeChildren',
             staggerChildred:1.25
         },
