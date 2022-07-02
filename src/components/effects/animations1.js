@@ -6,7 +6,7 @@ const animations={
             type:'spring',
             duration:0.5,
             when:'beforeChildren',
-            staggerChildred:0.25
+            staggerChildred:0.15
         }
     },
     init:{
