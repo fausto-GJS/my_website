@@ -4,7 +4,7 @@ import downloadCurriculo from '../doc/curriculo.pdf'
 import {GrDocumentDownload} from 'react-icons/gr'
 export default function Contact(){
     return(
-        <div  id="Contact">
+        <div id="Contact">
             
         <motion.div className='card'
         initial='init'
