@@ -30,6 +30,16 @@
     background-image: url('../imgs/carbono.jpg');
     background-size: auto;
 }
+@mixin project {
+    background-image: url('../imgs/project.png');
+
+    background-size:contain;
+}
+@mixin developer {
+    background-image: url('../imgs/developer.gif');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
 @mixin fundo1 {
     background-color:#525252;
 }

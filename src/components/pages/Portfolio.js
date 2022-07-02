@@ -1,26 +1,18 @@
-import { motion, useViewportScroll, useTransform } from "framer-motion";
-
+import {motion} from 'framer-motion'
+import animations2 from '../effects/animations2'
+import Gif from '../../assets/imgs/developer.gif'
 export default function Portfolio() {
-    const { scrollYProgress } = useViewportScroll()
-    const scale = useTransform(scrollYProgress, [0, 1], [0.1, 5]);
-
+  
     return (
-        <div id="Portfolio">
-            <div className="wrapper">
-      <motion.div
-        className="container"
-        style={{
-          scale
-        }}
-      >
         <motion.div
-          className="item"
-          style={{
-            scaleY: scrollYProgress
-          }}
-        />
-      </motion.div>
-    </div>
-        </div>
+        initial='init'
+        animate='show'
+        exit='exit'
+        variants={animations2}
+        id="Portfolio"
+        >
+          <img src={Gif} alt='developer'/>
+          <h1>Em breve novos projetos</h1>
+        </motion.div>
     )
 }
