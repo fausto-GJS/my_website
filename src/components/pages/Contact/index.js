@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
-import animations2 from '../effects/animations2'
-import downloadCurriculo from '../doc/curriculo.pdf'
+import animations2 from '../../effects/animations2'
+import downloadCurriculo from '../../doc/curriculo.pdf'
 import {GrDocumentDownload} from 'react-icons/gr'
 export default function Contact(){
     return(

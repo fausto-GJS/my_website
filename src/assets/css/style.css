@@ -53,6 +53,10 @@ a {
   color: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media (min-width: 950px) {
   #AboutUs {
     padding-top: 50px;
@@ -389,12 +393,20 @@ a {
       color: #0ef202;
     }
   }
+  @keyframes presentation {
+    to {
+      display: none;
+    }
+    from {
+      display: block;
+    }
+  }
   @keyframes info {
     0% {
-      content: "Desenvolvedor Fullstack Junior";
+      content: "Desenvolvedor Frontend Junior";
     }
     100% {
-      content: "Developer Fullstack Junior";
+      content: "Developer Frontend Junior";
     }
   }
   #Contact {
@@ -451,6 +463,11 @@ a {
 
   h1 {
     color: #222;
+  }
+
+  img {
+    height: 350px;
+    width: 350px;
   }
 
   #Error {

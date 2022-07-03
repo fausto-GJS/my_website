@@ -6,6 +6,7 @@
         @include module.flex-column;
         @include module.background-tech2;
         font-size: 30px;
+       
 
         .titleInfo {
             font-weight: bold;
@@ -18,7 +19,6 @@
             -webkit-background-clip: text;
             color: transparent;
             margin-left: 100px;
-
         }
 
         img {
@@ -97,9 +97,12 @@
                 font-size: 17px;
                 font-weight: bold;
                 padding: 30px;
+                
             }
         }
-
+        
+       
+        
         .infoIcons {
             font-size: 18px;
 
@@ -363,14 +366,23 @@ color:#ff5604
             }
 
         }
+        @keyframes presentation{
+            to{
+               display: none;
+            }
+            from{
+                display: block;
+            }
+        }
 
         @keyframes info {
             0% {
-                content: 'Desenvolvedor Fullstack Junior';
+                content: 'Desenvolvedor Frontend Junior';
             }
 
             100% {
-                content: 'Developer Fullstack Junior';
+                content: 'Developer Frontend Junior';
             }
         }
     }
+   

@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
-import animations2 from '../effects/animations2'
-import Gif from '../../assets/imgs/developer.gif'
+import animations2 from '../../effects/animations2'
+import Gif from '../../../assets/imgs/developer.gif'
 export default function Portfolio() {
   
     return (
