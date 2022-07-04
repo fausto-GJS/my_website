@@ -9,6 +9,7 @@
 @include components.Error_desktop;
 @include components.Header_desktop;
 @include components.Footer_desktop;
+@include components.Credits_desktop;
 }
 
 @media(min-width:795px) and (max-width:949px){

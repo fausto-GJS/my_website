@@ -1,0 +1,14 @@
+@use '../../root/module.scss';
+@mixin Credits_desktop{
+    #Credits{
+        @include module.flex-column;
+        @include module.position-center;
+        @include module.background-tech4;
+        color: #414141;
+        height: 97vh;
+    }
+   .cred{
+    @include module.flex-column;
+    @include module.position-center;
+   }
+}

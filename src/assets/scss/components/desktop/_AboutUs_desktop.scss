@@ -4,7 +4,7 @@
     #AboutUs {
         padding-top: 50px;
         @include module.flex-column;
-        @include module.background-tech2;
+        @include module.background-tech4;
         font-size: 30px;
        
 
@@ -14,7 +14,7 @@
                 content: '';
                 animation: info 10s infinite;
             }
-            @include module.background-marmore;
+            @include module.background-glitter;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -66,20 +66,20 @@
             @include module.background-glitter;
             margin-left: 50px;
             width: 50%;
-            height: 220px;
+            height: 260px;
             border-radius: 200px 100px;
-            box-shadow:0 0 2px gold;
+            border:4px solid #ff5604;
             &:hover{
-                box-shadow: 0 0 5px gold;   
+                border:3px solid #ff5604; 
             }
             &:active{
-                box-shadow: 0 0 8px gold;   
+                border:1px solid #ff5604;  
             }
            
         }
 
         .card-description {
-            box-shadow: 2px 2px rgba(gold,0.2);
+            box-shadow: 3px 3px rgba(#ff5604,0.5);
             animation: molecule 15s infinite;
             margin-left: 10px;
             margin-right: 10px;
@@ -88,10 +88,10 @@
             width: 700px;
             color: #cdd20b;
             &:hover{
-                box-shadow: 2px 2px rgba(gold,0.5);   
+                box-shadow: 3px 3px rgba(#ff5604,0.7);   
             }
             &:active{
-                box-shadow: 2px 2px rgba(gold,1);   
+                box-shadow: 3px 3px rgba(#ff5604,0.9);   
             }
             p {
                 font-size: 17px;

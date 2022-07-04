@@ -62,13 +62,13 @@ body {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    background-image: url("../imgs/tec2.gif");
+    background-image: url("../imgs/tec4.gif");
     background-size: 100%;
     font-size: 30px;
   }
   #AboutUs .titleInfo {
     font-weight: bold;
-    background-image: url("../imgs/marmore.jpg");
+    background-image: url("../imgs/glitter.gif");
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -129,18 +129,18 @@ body {
     background-size: 100%;
     margin-left: 50px;
     width: 50%;
-    height: 220px;
+    height: 260px;
     border-radius: 200px 100px;
-    box-shadow: 0 0 2px gold;
+    border: 4px solid #ff5604;
   }
   #AboutUs .card-photo:hover {
-    box-shadow: 0 0 5px gold;
+    border: 3px solid #ff5604;
   }
   #AboutUs .card-photo:active {
-    box-shadow: 0 0 8px gold;
+    border: 1px solid #ff5604;
   }
   #AboutUs .card-description {
-    box-shadow: 2px 2px rgba(255, 215, 0, 0.2);
+    box-shadow: 3px 3px rgba(255, 86, 4, 0.5);
     animation: molecule 15s infinite;
     margin-left: 10px;
     margin-right: 10px;
@@ -150,10 +150,10 @@ body {
     color: #cdd20b;
   }
   #AboutUs .card-description:hover {
-    box-shadow: 2px 2px rgba(255, 215, 0, 0.5);
+    box-shadow: 3px 3px rgba(255, 86, 4, 0.7);
   }
   #AboutUs .card-description:active {
-    box-shadow: 2px 2px gold;
+    box-shadow: 3px 3px rgba(255, 86, 4, 0.9);
   }
   #AboutUs .card-description p {
     font-size: 17px;
@@ -414,10 +414,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec2.gif");
+    background-image: url("../imgs/tec4.gif");
     background-size: 100%;
     background-color: #666;
-    color: #bbb;
+    color: #414141;
     width: 100%;
     height: 97vh;
   }
@@ -453,6 +453,8 @@ body {
   #Portfolio {
     display: flex;
     flex-direction: column;
+    background-image: url("../imgs/tec4.gif");
+    background-size: 100%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -495,6 +497,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
+    z-index: 10;
   }
   #Header button {
     visibility: hidden;
@@ -539,7 +542,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    width: 250px;
+    width: 350px;
+    margin-right: 10px;
   }
   #Header .menu a {
     margin: 0px;
@@ -564,6 +568,24 @@ body {
     width: 100%;
     height: 20px;
     bottom: 0px;
+  }
+
+  #Credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/tec4.gif");
+    background-size: 100%;
+    color: #414141;
+    height: 97vh;
+  }
+
+  .cred {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 795px) and (max-width: 949px) {
@@ -987,6 +1009,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
+    z-index: 10;
   }
   #Header .logo {
     display: flex;
@@ -1516,6 +1539,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
+    z-index: 10;
   }
   #Header .logo {
     display: flex;

@@ -4,6 +4,7 @@ import AboutUs from '../pages/AboutUs'
 import Contact from '../pages/Contact'
 import Portfolio from '../pages/Portfolio'
 import Error from '../pages/Error'
+import Credits from '../pages/Credits'
 import Footer from './Footer'
 export default function Router() {
   return (
@@ -13,6 +14,7 @@ export default function Router() {
         <Route index exact path='/' element={<AboutUs />} />
         <Route exact path='/portfolio' element={<Portfolio/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/credits' element={<Credits/>}/>
         <Route exact path='*' element={<Error/>}/>
       </Routes>
       <Footer/>

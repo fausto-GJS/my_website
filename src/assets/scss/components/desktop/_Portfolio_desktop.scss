@@ -2,7 +2,8 @@
 
 @mixin Portfolio_desktop {
     #Portfolio {
-      @include module.flex-column;
+      @include module.flex-column;  
+      @include module.background-tech4;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;

@@ -23,6 +23,7 @@ export default function Header() {
                     <Link to='/'>Sobre</Link>
                     <Link to='/portfolio'>Portfolio</Link>
                     <Link to='/contact'>Contato</Link>
+                    <Link to='/credits'>Creditos</Link>
                 </div>
         <div className="controls">
                 <div className="btnMobile"  onClick={() => btnMenu()} >
