@@ -4,12 +4,12 @@
         #AboutUs {
             padding-top: 80px;
             @include module.flex-column;
-            @include module.background-tech;
+            @include module.background-tech4;
             font-size: 30px;
 
             .titleInfo {
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 28px;
                 &::before {
                     content: '';
                     animation: info 10s infinite;
@@ -73,6 +73,14 @@
                 border-radius: 200px 100px;
                 margin-top: 20px;
                 margin-bottom: 50px;
+                
+            border:4px solid #ff5604;
+                &:hover{
+                    border:3px solid #ff5604; 
+                }
+                &:active{
+                    border:1px solid #ff5604;  
+                }
             }
 
             .card-description {
@@ -83,7 +91,13 @@
                 background-image: radial-gradient(#888, #666, #444, #222, #000);
                 width: 700px;
                 color: #cdd20b;
-
+                box-shadow: 3px 3px rgba(#ff5604,0.5);
+                &:hover{
+                    box-shadow: 3px 3px rgba(#ff5604,0.7);   
+                }
+                &:active{
+                    box-shadow: 3px 3px rgba(#ff5604,0.9);   
+                }
                 p {
                     font-size: 17px;
                     font-weight: bold;

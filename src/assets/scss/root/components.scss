@@ -4,6 +4,7 @@
 @forward '../components/tablet/PortfolioTablet';
 @forward '../components/tablet/HeaderTablet';
 @forward '../components/tablet/FooterTablet';
+@forward '../components/tablet/CreditsTablet';
 
 @forward '../components/desktop/AboutUs_desktop';
 @forward '../components/desktop/Contact_desktop';
@@ -19,5 +20,6 @@
 @forward '../components/mobile/Portfolio_mobile';
 @forward '../components/mobile/Header_mobile';
 @forward '../components/mobile/Footer_mobile';
+@forward '../components/mobile/Credits_mobile';
 
 @forward '../components/Browser';

@@ -19,6 +19,7 @@
 @include components.Error_tablet;
 @include components.Header_tablet;
 @include components.Footer_tablet;
+@include components.Credits_tablet;
 }
 
 @media(min-width:10px) and (max-width:794px){
@@ -28,4 +29,5 @@
     @include components.Error_mobile;
     @include components.Header_mobile;
     @include components.Footer_mobile;
+    @include components.Credits_mobile;
     }

@@ -7,7 +7,7 @@
         @include module.flex-column;
         justify-content:  center;
         align-items: center;    
-        @include module.background-tech3;
+        @include module.background-tech4;
         background-size:cover;
         font-size: 30px;
 
@@ -17,7 +17,7 @@
                 content: '';
                 animation: info 10s infinite;
             }
-            @include module.background-marmore;
+            @include module.background-glitter;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -73,6 +73,14 @@
             width: 50%;
             border-radius: 200px 100px;
             margin-bottom: 15px;
+            
+            border:4px solid #ff5604;
+            &:hover{
+                border:3px solid #ff5604; 
+            }
+            &:active{
+                border:1px solid #ff5604;  
+            }
         }
 
         .card-description {
@@ -85,6 +93,13 @@
             width: 80%;
             color: #cdd20b;
             margin-bottom: 15px;
+            box-shadow: 3px 3px rgba(#ff5604,0.5);
+            &:hover{
+                box-shadow: 3px 3px rgba(#ff5604,0.7);   
+            }
+            &:active{
+                box-shadow: 3px 3px rgba(#ff5604,0.9);   
+            }
             p {
                 font-size: 17px;
                 font-weight: bold;
@@ -120,10 +135,10 @@
             @include module.flex-column;
             @include module.background-carbono;
             @include module.position-center;
+            width: 100%;
             margin-top: 280px;
             padding-top: 80px;
-           
-            height: 100%;
+            height: 700px;
             h5,h4{
             @include module.background-glitter;
             background-clip: text;

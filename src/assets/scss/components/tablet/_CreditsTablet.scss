@@ -1,0 +1,18 @@
+@use '../../root/module.scss';
+@mixin Credits_tablet{
+    #Credits{
+        @include module.flex-column;
+        @include module.position-center;
+        @include module.background-tech4;
+        color: #414141;
+        height: 97vh;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 20px;
+    }
+   .cred{
+    @include module.flex-column;
+    @include module.position-center;
+   }
+}
