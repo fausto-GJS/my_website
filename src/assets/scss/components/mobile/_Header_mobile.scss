@@ -85,7 +85,7 @@
             z-index: 2;
             @include module.flex-column;
             @include module.position-center;
-            border-radius: 0px 0px 0px 15px;
+            border-radius: 0px 0px 15px 0px;
             transition: .6s;
             top: 50px;
             width: 200px;
