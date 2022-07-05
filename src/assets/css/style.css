@@ -1193,7 +1193,7 @@ body {
 }
 @media (min-width: 10px) and (max-width: 794px) {
   #AboutUs {
-    width: 110%;
+    width: 100%;
     overflow-x: hidden;
     padding-top: 50px;
     display: flex;

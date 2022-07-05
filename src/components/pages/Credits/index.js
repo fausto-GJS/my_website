@@ -2,7 +2,6 @@ export default function Credits() {
     return (
         <div id="Credits">
             <div>
-
             <div className="cred">
                 <h1>Creditos de imagens da Pagina Sobre</h1>
                 <strong>Todos os creditos para React icons</strong>

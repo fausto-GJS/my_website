@@ -3,7 +3,7 @@
 @mixin AboutUs_mobile {
     #AboutUs {
         
-        width: 110%;
+        width: 100%;
         overflow-x: hidden;
         padding-top: 50px;
         @include module.flex-column;
