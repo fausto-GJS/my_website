@@ -30,7 +30,18 @@
     background-image: url('../imgs/tec3.gif');
     background-size: 100%;
 }
+@mixin tech6 {
+    background-image: url('../imgs/space.gif');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
 @mixin tech4 {
+    background-image: url('../imgs/tec6.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+@mixin tech5{
     background-image: url('../imgs/tec5.jpg');
     background-size: auto;
     background-repeat:no-repeat;
