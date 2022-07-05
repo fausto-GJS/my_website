@@ -1193,7 +1193,8 @@ body {
 }
 @media (min-width: 10px) and (max-width: 794px) {
   #AboutUs {
-    width: 320px;
+    width: 110%;
+    overflow-x: hidden;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -1205,7 +1206,18 @@ body {
     font-size: 30px;
   }
   #AboutUs .titleInfo {
-    display: none;
+    font-weight: bold;
+    background-image: url("../imgs/glitter.gif");
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  #AboutUs .titleInfo::before {
+    content: "";
+    animation: info 6s infinite;
   }
   #AboutUs img {
     width: 250px;
@@ -1327,6 +1339,9 @@ body {
     -webkit-background-clip: text;
     color: transparent;
   }
+  #AboutUs .network h5 {
+    font-size: 18px;
+  }
   #AboutUs .network .social {
     display: flex;
     flex-direction: column;
@@ -1375,7 +1390,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 150px;
   }
   #AboutUs .iconLinkedin {
     width: 40px;
@@ -1527,7 +1542,7 @@ body {
       content: "Desenvolvedor Fullstack Junior";
     }
     100% {
-      content: "Developer Fullstack Junior";
+      content: "Fausto Garcia Jacinto Silva";
     }
   }
 
@@ -1571,6 +1586,9 @@ body {
     color: gold;
     background-color: #f8241f;
     box-shadow: 0 0 25px gold;
+  }
+  #Contact h1 {
+    font-size: 13px;
   }
 
   #Portfolio {
@@ -1737,6 +1755,7 @@ body {
     width: 100%;
     height: 20px;
     bottom: 0px;
+    font-size: 10px;
   }
 
   #Credits {

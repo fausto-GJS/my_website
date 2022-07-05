@@ -12,7 +12,7 @@ export default function Contact(){
         exit='exit'
         variants={animations2}
         >
-            <h2>Se desejar, entre em contato para uma avaliação técnica.</h2>
+            <h1>Se desejar, entre em contato para uma avaliação técnica.</h1>
             <h2>Envie uma mensagem</h2>
             <h2>Whatsapp: (11) 93003-8209</h2>
             <h2>Email: faustogarciajacinto@gmail.com</h2>
