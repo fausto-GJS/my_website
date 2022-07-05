@@ -4,61 +4,65 @@
     #Header {
         position: fixed;
         @include module.flex-row;
-        @include module.position-space;
+        justify-content: flex-start;
+        align-items:center;
         @include module.background-fundo1;
         width: 100%;
         height: 50px;
         padding: 10px;
         z-index: 10;
+
         .logo {
-            @include module.flex-row;
-            @include module.position-center;
+            display: none;
         }
 
         .iconLogo {
-            color: #f2f200;
-            @include module.background-glitter;
-            @include module.icon-size3;
-            border-radius: 100%;
-            animation: rotateFrame 10s infinite;
+            display: none;
         }
 
-        .titleHeader{
-            @include module.background-glitter;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            font-size: 30px;
-            margin-left: 15px;
-            width: 190px;
-            &:before {
-                content: "Fausto GJS";
-            }
+        .titleHeader {
+            display: none;
+        }
+
+
+        .controls {
+            @include module.flex-column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            left:2;
+            position:absolute;
         }
 
         .btnMobile {
             @include module.flex-column;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             z-index: 3;
             border: none;
             width: 10px;
             padding: 1px;
+            left:2;
+            position:absolute;
         }
 
         .btnMobile1.active,
-        .btnMobile3.active{
+        .btnMobile3.active {
             position: absolute;
             width: 30px;
             transition: 1.4s;
         }
-        .btnMobile2.active{
-              width: 0px;
+
+        .btnMobile2.active {
+            width: 0px;
         }
-        .btnMobile1.active{
+
+        .btnMobile1.active {
             transform: rotate(400deg);
         }
-        .btnMobile3.active{
+
+        .btnMobile3.active {
             transform: rotate(-400deg);
         }
 
@@ -73,18 +77,8 @@
             height: 8px;
             background-color: black;
             border-radius: 15px;
-           
         }
 
-
-        .controls {
-            @include module.flex-column;
-            justify-content:center;
-            align-items: center;
-            width: 50px;
-            height: 50px;
-           
-        }
 
         .menu.active {
             position: absolute;
@@ -97,7 +91,7 @@
             width: 200px;
             height: 250px;
             background-color: #e7e7e7;
-            right: 0;
+            left: 0;
             visibility: visible;
 
             a {
