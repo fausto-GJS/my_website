@@ -62,8 +62,9 @@ body {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     font-size: 30px;
   }
   #AboutUs .titleInfo {
@@ -108,6 +109,8 @@ body {
     align-items: center;
     margin-top: 25px;
     color: #ffcb1a;
+    background-image: radial-gradient(#000, #222, #444, #666, #888);
+    border-radius: 15px;
   }
   #AboutUs .ability .title {
     text-decoration: underline;
@@ -414,8 +417,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     background-color: #666;
     color: #414141;
     width: 100%;
@@ -453,8 +457,9 @@ body {
   #Portfolio {
     display: flex;
     flex-direction: column;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -575,8 +580,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     color: #414141;
     height: 97vh;
   }
@@ -588,13 +594,14 @@ body {
     align-items: center;
   }
 }
-@media (min-width: 795px) and (max-width: 949px) {
+@media (min-width: 860px) and (max-width: 949px) {
   #AboutUs {
     padding-top: 80px;
     display: flex;
     flex-direction: column;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     font-size: 30px;
   }
   #AboutUs .titleInfo {
@@ -640,6 +647,8 @@ body {
     align-items: center;
     margin-top: 25px;
     color: #ffcb1a;
+    background-image: radial-gradient(#000, #222, #444, #666, #888);
+    border-radius: 15px;
   }
   #AboutUs .ability .title {
     text-decoration: underline;
@@ -943,8 +952,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     width: 100%;
     height: 97vh;
   }
@@ -993,6 +1003,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     width: 100%;
     height: 97vh;
   }
@@ -1173,8 +1186,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     color: #414141;
     height: 97vh;
     font-size: 15px;
@@ -1191,7 +1205,7 @@ body {
     align-items: center;
   }
 }
-@media (min-width: 10px) and (max-width: 794px) {
+@media (min-width: 10px) and (max-width: 860px) {
   #AboutUs {
     width: 100%;
     overflow-x: hidden;
@@ -1200,8 +1214,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     background-size: cover;
     font-size: 30px;
   }
@@ -1248,6 +1263,8 @@ body {
     align-items: center;
     margin-top: 25px;
     color: #ffcb1a;
+    background-image: radial-gradient(#000, #222, #444, #666, #888);
+    border-radius: 15px;
   }
   #AboutUs .ability .title {
     text-decoration: underline;
@@ -1551,8 +1568,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     background-color: #666;
     color: #414141;
     width: 100%;
@@ -1596,6 +1614,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     width: 100%;
     height: 97vh;
   }
@@ -1765,8 +1786,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/tec4.gif");
-    background-size: 100%;
+    background-image: url("../imgs/tec5.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     color: #414141;
     height: 97vh;
     font-size: 15px;

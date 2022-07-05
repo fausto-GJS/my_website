@@ -48,6 +48,8 @@
             @include module.position-center;
             margin-top: 25px;
             color: #ffcb1a;
+            background-image: radial-gradient(#000, #222, #444, #666, #888);
+            border-radius:15px;
             .title{
                 text-decoration: underline;
             }

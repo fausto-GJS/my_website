@@ -22,13 +22,18 @@
     background-image: url('../imgs/tec2.gif');
     background-size: 100%;
 }
-@mixin tech4 {
+@mixin tech5 {
     background-image: url('../imgs/tec4.gif');
     background-size: 100%;
 }
 @mixin tech3 {
     background-image: url('../imgs/tec3.gif');
     background-size: 100%;
+}
+@mixin tech4 {
+    background-image: url('../imgs/tec5.jpg');
+    background-size: auto;
+    background-repeat:no-repeat;
 }
 @mixin carbono {
     background-image: url('../imgs/carbono.jpg');

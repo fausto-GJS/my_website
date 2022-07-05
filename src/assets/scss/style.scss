@@ -12,7 +12,7 @@
 @include components.Credits_desktop;
 }
 
-@media(min-width:795px) and (max-width:949px){
+@media(min-width:860px) and (max-width:949px){
 @include components.AboutUs_tablet;
 @include components.Contact_tablet;
 @include components.Portfolio_tablet;
@@ -22,7 +22,7 @@
 @include components.Credits_tablet;
 }
 
-@media(min-width:10px) and (max-width:794px){
+@media(min-width:10px) and (max-width:860px){
     @include components.AboutUs_mobile;
     @include components.Contact_mobile;
     @include components.Portfolio_mobile;
