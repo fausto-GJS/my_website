@@ -9,7 +9,7 @@ export default function Portfolio() {
 
   async function portfolio(){
     const response = await api.get('portfolio')
-    setPortfolioAPI(response.data)
+    setPortfolioAPI(response)
     console.log(PortfolioAPI)
   }
   portfolio()
