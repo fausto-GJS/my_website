@@ -1,8 +1,16 @@
+import React,{useEffect} from 'react'
 import {motion} from 'framer-motion'
 import animations2 from '../../effects/animations2'
 import Gif from '../../../assets/imgs/developer.gif'
+import api from '../../common/api'
 export default function Portfolio() {
   
+  useEffect(()=>{
+    api.get('portfolio').then(res=>{
+      console.log(res)
+    })
+  },[])
+
     return (
         <motion.div
         initial='init'
