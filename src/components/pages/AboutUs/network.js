@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import animations2 from '../../effects/animations2'
 import { useScroll } from '../../common/hooks/useScroll'
 import scrollReveal from '../../effects/scrollReveal'
-import Email from '../../../services/email'
+
 
 export default function Network(){
     const [element, control] = useScroll();
