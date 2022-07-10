@@ -19,12 +19,8 @@ export default function Portfolio() {
     portfolio()
   },[])
   
-  if(PortfolioAPI==="erro"){
-    return(
-      <Vazio/>
-    )
-    }
-    else{
+  if(!PortfolioAPI==="erro"){
+    
     return (
       <>
         <motion.div
@@ -45,5 +41,9 @@ export default function Portfolio() {
         </motion.div>
         </>
     )
-         }
+  }else{
+         return(
+          <Vazio/>
+        )
+        }
 }
