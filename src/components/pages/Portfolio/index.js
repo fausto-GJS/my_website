@@ -8,10 +8,10 @@ export default function Portfolio() {
   const [PortfolioAPI,setPortfolioAPI]=useState([])
 
   useEffect(()=>{
-   async function portfolio(){
+   async function portfolio(next){
     try{
       const response = await api.get('portfolio')
-      setPortfolioAPI(response.data.data)
+      setPortfolioAPI(response.data)
     } catch{
       setPortfolioAPI("erro")
     }
@@ -19,7 +19,7 @@ export default function Portfolio() {
     portfolio()
   },[])
   
-  if(!PortfolioAPI==="erro"){
+  if(PortfolioAPI.length>0){
     
     return (
       <>
@@ -33,7 +33,7 @@ export default function Portfolio() {
         <ul>
          {PortfolioAPI.map(api=>(
            <li key={api.id}>
-            <h2>{api.titulo}</h2>
+            <p>{api.title}</p>
             <p>{api.description}</p>
           </li>
          ))}
