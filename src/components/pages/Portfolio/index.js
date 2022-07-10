@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {motion} from 'framer-motion'
 import animations2 from '../../effects/animations2'
 import Gif from '../../../assets/imgs/developer.gif'
@@ -7,17 +7,14 @@ export default function Portfolio() {
   
   const [PortfolioAPI,setPortfolioAPI]=useState([])
 
-  async function portfolio(){
-    const response = await api.get('portfolio')
-    setPortfolioAPI(response.data)
-    console.log(PortfolioAPI)
-  }
-  portfolio()
-  
   useEffect(()=>{
-   
+   async function portfolio(){
+      const response = await api.get('portfolio')
+      setPortfolioAPI(response.data.data)
+    }
+    portfolio()
   },[])
-
+ 
     return (
       <>
         <motion.div
@@ -29,13 +26,15 @@ export default function Portfolio() {
         >
           <img src={Gif} alt='developer'/>
           <h1>Em breve novos projetos</h1>
-
+        <ul>
+          <p>teste api</p>
          {PortfolioAPI.map(api=>(
-          <li key={api.id}>
+           <li key={api.id}>
             <h2>{api.titulo}</h2>
             <p>{api.description}</p>
           </li>
          ))}
+         </ul>
         </motion.div>
         </>
     )
