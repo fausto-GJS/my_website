@@ -26,7 +26,7 @@ export default function Portfolio() {
         >
           <img src={Gif} alt='developer'/>
           <h1>Em breve novos projetos</h1>
-        <ul>
+        
           <p>teste api</p>
          {PortfolioAPI.map(api=>(
            <li key={api.id}>
@@ -34,7 +34,7 @@ export default function Portfolio() {
             <p>{api.description}</p>
           </li>
          ))}
-         </ul>
+
         </motion.div>
         </>
     )
